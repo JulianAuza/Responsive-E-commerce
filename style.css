@@ -1,0 +1,85 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+nav{
+    width:100%;
+    background-color:whitesmoke;
+    text-align: center;
+    height:150px;
+}
+h1{
+    color:#00838F;
+    font-weight:400;
+}
+input{
+    height:20px;
+    margin-top: 24px;
+}
+div.navHead{
+    height:70px;
+    display: flex;
+    justify-content:space-between;
+    width:80%;
+    margin:auto;
+}
+
+div.message{
+    height:25px;
+    background-color: grey;
+    color:whitesmoke;
+}
+.item {
+    order: 4; /* default is 0 */
+}
+ul.item li{
+    display:inline-block;
+    list-style-type: none;
+}
+div.splash{
+    height:970px;
+    background-color: lightgray;
+}
+div.heroProducts{
+    height:500px;
+    background-color: white;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 500px 500px 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    ". one one ."
+    ". two three ."
+    ". four four ."
+    ". five five .";
+
+}
+.grid div:nth-child(even){
+    background-color: lightgrey;
+}
+.grid div:nth-child(odd){
+    background-color: lightslategray;
+}
+.one{
+    grid-area:one;
+}
+.two{
+    grid-area:two;
+}
+.three{
+    grid-area:three;
+}
+.four{
+    grid-area:four;
+}
+.five{
+    grid-area:five;
+}
+@media screen and (max-width: 600px) {
+    nav {
+        background-color: lightgreen;
+    }
+}
