@@ -2,12 +2,17 @@ body{
     font-family: 'Open Sans', sans-serif;
     margin: 0 !important;
     padding: 0 !important;
+    font-weight:300;
 }
+.container{
+    width:970px;
+    margin:auto;
+}
+
 nav{
     width:100%;
     background-color:whitesmoke;
     text-align: center;
-    height:150px;
 }
 h1{
     color:#00838F;
@@ -17,6 +22,7 @@ input{
     height:20px;
     margin-top: 24px;
 }
+
 div.navHead{
     height:70px;
     display: flex;
@@ -26,9 +32,12 @@ div.navHead{
 }
 
 div.message{
-    height:25px;
-    background-color: grey;
+    height:40px;
+    background-color: #063743;
     color:whitesmoke;
+}
+div.message p{
+    line-height: 40px;
 }
 .item {
     order: 4; /* default is 0 */
@@ -36,11 +45,30 @@ div.message{
 ul.item li{
     display:inline-block;
     list-style-type: none;
+    padding-right:10px;
 }
+#navItem{
+    
+}
+
 div.splash{
-    height:970px;
+    height:890px;
     background-color: lightgray;
 }
+div.splash div.img{
+    height:98%;
+    width:70%;
+    display: inline-block;
+    background-color: pink;
+}
+div.splash div.cta{
+    display: inline-block;
+    height:98%;
+    width:30%;
+    float:right;
+    background-color: white;
+}
+
 div.heroProducts{
     height:500px;
     background-color: white;
@@ -55,7 +83,6 @@ div.heroProducts{
     ". two three ."
     ". four four ."
     ". five five .";
-
 }
 .grid div:nth-child(even){
     background-color: lightgrey;
@@ -78,8 +105,34 @@ div.heroProducts{
 .five{
     grid-area:five;
 }
+
+
 @media screen and (max-width: 600px) {
     nav {
         background-color: lightgreen;
     }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        background-color: pink;
+    }
+}
+
+div.marketing{
+    width:100%;
+    background-color: gray;
+    height:200px;
+}
+
+div.footer{
+    width:100%;
+    height:350px;
+    background-color: teal;
+}
+
+div.copyright{
+    width:100%;
+    height:30px;
+    background-color: aqua;
 }
